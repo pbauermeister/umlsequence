@@ -60,6 +60,14 @@ Syntax and Examples
 
 See http://ten.homelinux.net/productivity/doc/CASE%20Tools/UML%20Modeling/Sequence%20Diagram
 
+Dependencies
+------------
+
+ * python-setuptools (for setup -- for building the Debian package)
+ * imagemagick (for convert)
+ * plotutils (for pic2plot)
+
+
 Installing via Debian package
 -----------------------------
 
