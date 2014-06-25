@@ -1,0 +1,36 @@
+# Example taken from
+#  http://ten.homelinux.net/productivity/doc/CASE%20Tools/UML%20Modeling/Sequence%20Diagram/Examples
+
+boxwid = 1.5;
+
+####### ####### ####### ########
+
+U	* Actor
+O1	: Instance:Class
+{{an object constraint}}
+SPACER	:
+O2	:
+
+####### ####### ####### ########
+
+U	?->	O1	async message
+O1+
+O1	::>	O2	new Object
+O1	-->	O2+	sync message
+:
+O2			//[,right 1.5] a comment,  \n\
+			here attached to an object \n\
+			activation bar
+:
+O2			> self-delegation
+O1	<==	O2-	return or async message
+:
+Box1	[	O1	A Box
+:
+O1			_{{a constraint}}
+:
+O1	==>	O2	result = a_procedure_call(params)
+O1	##>	O2
+:
+O2	]	Box1
+
