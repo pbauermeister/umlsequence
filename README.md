@@ -14,7 +14,7 @@ which is more compact.
 
 The following example illustrates the difference.
 
-UMLGraph syntax::
+UMLGraph syntax:
 
     # Define the objects
     object(O,"o:Toolkit");
@@ -36,7 +36,7 @@ UMLGraph syntax::
     step();
     complete(O);
 
-Same, in umlsequence syntax::
+Same, in umlsequence syntax:
 
     # Define the objects
     O  : o:Toolkit
@@ -63,11 +63,11 @@ See http://ten.homelinux.net/productivity/doc/CASE%20Tools/UML%20Modeling/Sequen
 Installing via Debian package
 -----------------------------
 
- 1. run::
+ 1. run:
 
         ./build_debian.sh
 
- 1. run::
+ 1. run:
 
         sudo dpkg -i ./deb_dist/python-umlsequence_1.00.unknown-revision-1_all.deb
 
@@ -76,18 +76,19 @@ Installing via Debian package
 Installing manually (Linux and OSX)
 -----------------------------------
 
- 1. Copy the directory umlsequence to an appropriate place::
+ 1. Copy the directory umlsequence to an appropriate place:
 
         sudo cp -a umlsequence /var/local/
 
- 1. Make a symlink into a directory included in the PATH (for instance `/var/local/bin/`)::
+ 1. Make a symlink into a directory included in the PATH (for instance `/var/local/bin/`):
 
         sudo ln -s /var/local/umlsequence/umlsequence /var/local/bin/
 
 Usage
 -----
 
-    `umlsequence -h` says::
+`umlsequence -h` says:
+
     usage: umlsequence [-h] [--version] [--output-file OUTPUT_FILE]
                        [--percent-zoom PERCENT_ZOOM]
                        [--background-color BACKGROUND_COLOR] [--debug]
