@@ -397,7 +397,7 @@ define begin_frame {
  # draw the frame-label
  $2: box $3 invis with .n at ($1.x, Here.y);
  d = $2.e.y - $2.se.y;
- line from $2.ne to $2.e then down d left d then to $2.sw;
+ line thickness 0 from $2.ne to $2.e then down d left d then to $2.sw;
  # continue the lifeline below the frame-label
  move to $2.s;
  lifestart_$1 = Here.y;
@@ -410,7 +410,7 @@ define end_frame {
  # draw the frame
  frame_wid = last box.se.x - $2.nw.x
  frame_ht = - last box.se.y + $2.nw.y
- box with .nw at $2.nw wid frame_wid ht frame_ht;
+ box thickness 0 with .nw at $2.nw wid frame_wid ht frame_ht;
  # restore Here.y
  move to last box.s;
 }
@@ -421,9 +421,9 @@ define comment {
  # draw the first connecting line, at which's end the box wil be positioned
  move to ($1.x, Here.y)
  if "$3" == "" then {
-  line comment_default_move() dashed;
+  line thickness 0 comment_default_move() dashed;
  } else {
-  line $3 dashed;
+  line thickness 0 $3 dashed;
  }
 
  # draw the box, use comment_default_xx if no explicit
@@ -433,21 +433,21 @@ define comment {
  boxht=comment_default_ht;
  boxwid=comment_default_wid;
  if "$2" == "" then {
-  box invis $4;
+  box $4 invis;
  } else {
-  $2: box invis $4;
+  $2: box $4 invis;
  }
  boxht=old_boxht;
  boxwid=old_boxwid;
 
  # draw the frame of the comment
- line from last box.nw \\
+ line thickness 0 from last box.nw \\
   to     last box.ne - (corner_fold, 0) \\
   then to last box.ne - (0, corner_fold) \\
   then to last box.se \\
   then to last box.sw \\
   then to last box.nw ;
- line from last box.ne - (corner_fold, 0) \\
+ line thickness 0 from last box.ne - (corner_fold, 0) \\
   to     last box.ne - (corner_fold, corner_fold) \\
   then to last box.ne - (0, corner_fold) ;
 
