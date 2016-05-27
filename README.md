@@ -88,7 +88,7 @@ Installing manually (Linux and OSX)
 
  1. Copy the **directory** umlsequence to an appropriate place:
 
-        sudo cp -a umlsequence /usr/local/
+        sudo cp -a umlsequence/ /usr/local/
 
  1. Make a symlink into a directory included in the PATH (for instance `/usr/local/bin/`):
 
