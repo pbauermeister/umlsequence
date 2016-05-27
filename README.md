@@ -84,6 +84,8 @@ Installing via Debian package
 Installing manually (Linux and OSX)
 -----------------------------------
 
+ 1. Make sure that ``imagemagick`` and ``plotutils`` are installed.
+
  1. Copy the **directory** umlsequence to an appropriate place:
 
         sudo cp -a umlsequence /usr/local/
