@@ -84,13 +84,13 @@ Installing via Debian package
 Installing manually (Linux and OSX)
 -----------------------------------
 
- 1. Copy the directory umlsequence to an appropriate place:
+ 1. Copy the **directory** umlsequence to an appropriate place:
 
-        sudo cp -a umlsequence /var/local/
+        sudo cp -a umlsequence /usr/local/
 
- 1. Make a symlink into a directory included in the PATH (for instance `/var/local/bin/`):
+ 1. Make a symlink into a directory included in the PATH (for instance `/usr/local/bin/`):
 
-        sudo ln -s /var/local/umlsequence/umlsequence /var/local/bin/
+        sudo ln -s /usr/local/umlsequence/umlsequence /usr/local/bin/
 
 Usage
 -----
