@@ -67,19 +67,24 @@ Dependencies
  * imagemagick (for convert)
  * plotutils (for pic2plot)
 
-
 Installing via Debian package
 -----------------------------
 
- 1. run:
+ 1. Install dependencies:
+        ```
+        sudo apt install python-setuptools imagemagick plotutils
+        ```
 
+
+ 1. run:
+        ```
         ./build_debian.sh
+        ```
 
  1. run:
-
+        ```
         sudo dpkg -i ./deb_dist/python-umlsequence_1.00.unknown-revision-1_all.deb
-
- If it fails due to needed packages, install them (`sudo apt-get install REQUIRED-PACKAGES...`).
+        ```
 
 Installing manually (Linux and OSX)
 -----------------------------------
