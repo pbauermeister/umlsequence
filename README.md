@@ -71,20 +71,22 @@ Installing via Debian package
 -----------------------------
 
  1. Install dependencies:
-        ```
-        sudo apt install python-setuptools imagemagick plotutils
-        ```
 
-
- 1. run:
-        ```
-        ./build_debian.sh
-        ```
+    ```
+    sudo apt install python-setuptools imagemagick plotutils
+    ```
 
  1. run:
-        ```
-        sudo dpkg -i ./deb_dist/python-umlsequence_1.00.unknown-revision-1_all.deb
-        ```
+
+    ```
+    ./build_debian.sh
+    ```
+
+ 1. run:
+
+    ```
+    sudo dpkg -i ./deb_dist/python-umlsequence_1.00.unknown-revision-1_all.deb
+    ```
 
 Installing manually (Linux and OSX)
 -----------------------------------
