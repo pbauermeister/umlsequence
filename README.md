@@ -63,7 +63,7 @@ See http://ten.homelinux.net/productivity/doc/CASE%20Tools/UML%20Modeling/Sequen
 Dependencies
 ------------
 
- * python-setuptools (for setup -- for building the Debian package)
+ * python-setuptools and python-stdeb (for setup -- for building the Debian package)
  * imagemagick (for convert)
  * plotutils (for pic2plot)
 
@@ -73,7 +73,7 @@ Installing via Debian package
  1. Install dependencies:
 
     ```
-    sudo apt install python-setuptools imagemagick plotutils
+    sudo apt install python-setuptools python-stdeb imagemagick plotutils
     ```
 
  1. run:
