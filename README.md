@@ -73,7 +73,7 @@ Installing via Debian package
  1. Install dependencies:
 
     ```
-    sudo apt install python-all python-setuptools python-stdeb imagemagick plotutils
+    sudo apt install python-all python-setuptools python-stdeb imagemagick plotutils build-essential dh-python
     ```
 
  1. run:
@@ -85,7 +85,7 @@ Installing via Debian package
  1. run:
 
     ```
-    sudo dpkg -i ./deb_dist/python-umlsequence_1.00.unknown-revision-1_all.deb
+    sudo dpkg -i ./deb_dist/python-umlsequence_1.00.00-1_all.deb
     ```
 
 Installing manually (Linux and OSX)
