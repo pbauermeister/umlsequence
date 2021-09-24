@@ -1,3 +1,7 @@
+**This repository is no longer maintained.** Please use the V2 version: https://github.com/pbauermeister/umlsequence2.
+
+----
+
 umlsequence
 ===========
 
